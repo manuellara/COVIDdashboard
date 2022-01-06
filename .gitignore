@@ -1,0 +1,15 @@
+
+# ignore folders
+/archive
+/env
+/.vscode
+/__pycache__
+
+# ignore Graph API endpoints and other sensitive 
+*.env
+
+# ignore Google sensitive data
+*.json
+
+# ignore driver script
+*.ps1
