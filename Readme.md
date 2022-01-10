@@ -10,7 +10,7 @@ This tool will:
 2. Grab staff data from the <b>Responses COVID-19 Form</b> (Dashboard Data tab) Excel sheet (via Microsoft Graph API) on a private Sharepoint site
 3. Update the <b>Positive/Confirmed COVID Cases Students and Staff</b> (Current Enrollment Staff/Students tab) Google sheet.
 
-## Step 1:
+## Directions:
 First, navigate into the project folder 
 ```
 cd COVID Dashboard
@@ -26,6 +26,6 @@ If the 'COVID' Docker image is already on your system, the script will run fine.
 #### <b>Please note that the .env file for the Dockerfile is not included in this repo</b> 
 
 ## Result
-If the process runs successfully, a MS Teams webhook should be sent to the 'Automate' channel
+If the process runs successfully, a MS Teams webhook should be sent to a private channel
 
 
