@@ -1,7 +1,7 @@
 import gspread
-import datetime
+# import datetime
 from msgraph import msgraphapi
-import requests
+# import requests
 
 
 def msapi():
@@ -47,30 +47,30 @@ def gspreadtogsheets(stuLst, stuCnt, stfLst, stfCnt, stuTot, stuTotCnt):
     # update Google sheet cells based on student total list of lists
     worksheet.update(f'E2:E{stuTotCnt + 1}', stuTot)
 
-    ### get today's date 
-    # datetime endpoint
-    URL = "http://worldclockapi.com/api/json/pst/now"
+    # # get today's date 
+    # # datetime endpoint
+    # URL = "http://worldclockapi.com/api/json/pst/now"
 
-    # make request
-    r = requests.get(url = URL)
+    # # make request
+    # r = requests.get(url = URL)
 
-    # convert request to json
-    data = r.json()
+    # # convert request to json
+    # data = r.json()
 
-    # get currentDateTime attribute in weird format
-    dt = data['currentDateTime']
+    # # get currentDateTime attribute in weird format
+    # dt = data['currentDateTime']
 
-    # split currentDateTime on T
-    date = dt.split('T')
+    # # split currentDateTime on T
+    # date = dt.split('T')
 
-    # convert date string to datetime object
-    date_time = datetime.datetime.strptime(date[0], '%Y-%m-%d')
+    # # convert date string to datetime object
+    # date_time = datetime.datetime.strptime(date[0], '%Y-%m-%d')
 
-    # format datetime object to mm/dd/yyy
-    current_day = datetime.date.strftime(date_time.date(), "%m/%d/%Y")
+    # # format datetime object to mm/dd/yyy
+    # current_day = datetime.date.strftime(date_time.date(), "%m/%d/%Y")
 
-    # update Google sheet cell C34 with last modified date (mm/dd/yyyy)
-    worksheet.update('C34', current_day)
+    # # update Google sheet cell C34 with last modified date (mm/dd/yyyy)
+    # worksheet.update('C34', current_day)
 
 # Create list of lists
 stuLst, stuCnt, stfLst, stfCnt, stuTot, stuTotCnt = msapi()
