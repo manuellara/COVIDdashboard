@@ -1,7 +1,7 @@
 import gspread
-# import datetime
+import datetime
 from msgraph import msgraphapi
-# import requests
+import requests
 
 
 def msapi():
