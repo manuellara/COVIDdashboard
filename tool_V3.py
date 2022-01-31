@@ -70,7 +70,8 @@ def successMsWebhook(stu, stf):
     myTeamsMessage.title("COVID Dashboard update")
 
     # add link to Google Sheet
-    myTeamsMessage.addLinkButton("Positive/Confirmed cases Google Sheet ", "https://docs.google.com/spreadsheets/d/1z_Nvr6D4Ouv8hq2ChHxEEP_c-MawV-RiAVuwRZu_i1Q/edit?usp=sharing")
+    gSheet = os.environ["covidGoogleSheet"]
+    myTeamsMessage.addLinkButton("Positive/Confirmed cases Google Sheet ", f"{gSheet}")
 
     # set body
     myTeamsMessage.text(f'''
