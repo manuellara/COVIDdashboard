@@ -16,7 +16,7 @@ First, navigate into the project folder
 cd COVID Dashboard
 ```
 
-Then run the 'automate' Powershell script (not included in this repo)
+Then run the 'automate' Powershell script
 ```
 .\automate.ps1
 ```
