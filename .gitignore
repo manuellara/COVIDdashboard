@@ -5,7 +5,7 @@
 /.vscode
 /__pycache__
 
-# ignore Graph API endpoints and other sensitive 
+# ignore Graph API endpoints and other sensitive info
 *.env
 
 # ignore Google sensitive data
