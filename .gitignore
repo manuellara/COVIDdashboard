@@ -10,6 +10,3 @@
 
 # ignore Google sensitive data
 *.json
-
-# ignore driver script
-*.ps1
